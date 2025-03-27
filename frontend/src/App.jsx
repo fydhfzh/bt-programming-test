@@ -32,9 +32,7 @@ function App() {
     <>
       <h1>Dashboard</h1>
       <br />
-      <div>
-        <ul>{fo}</ul>
-      </div>
+      <div></div>
       <div>
         <button>Log Out</button>
       </div>
