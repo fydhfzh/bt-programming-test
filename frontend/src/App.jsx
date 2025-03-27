@@ -8,23 +8,21 @@ function App() {
   const [tasks, setTasks] = useState([]);
 
   useEffect(() => {
-    const token = window.sessionStorage.getItem('token');
-    const url = 'http://localhost:3000/tasks';
-    try {
-      const res = fetch(url, {
-        method: 'GET',
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      });
-
-      if(!res.ok) {
-        return
-      }
-
-      const json = await res.json()
-    } catch (error) {
-      console.error(error);
+    // const token = window.sessionStorage.getItem('token');
+    // const url = 'http://localhost:3000/tasks';
+    // try {
+    //   // const res = fetch(url, {
+    //   //   method: 'GET',
+    //   //   headers: {
+    //   //     Authorization: `Bearer ${token}`,
+    //   //   },
+    //   // });
+    //   // if(!res.ok) {
+    //   //   return
+    //   // }
+    //   // const json = await res.json()
+    // } catch (error) {
+    //   console.error(error);
     }
   }, []);
 
